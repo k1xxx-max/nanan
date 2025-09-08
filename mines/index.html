@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mines Game</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; background: #1a1a2e; color: white; padding: 20px; text-align: center; }
+        .balance { font-size: 20px; margin: 15px 0; color: #2ecc71; }
+        .game-board { display: grid; grid-template-columns: repeat(5, 50px); gap: 10px; justify-content: center; margin: 20px auto; }
+        .cell { width: 50px; height: 50px; background: #3498db; border-radius: 5px; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+        button { background: #e74c3c; color: white; border: none; padding: 10px 20px; border-radius: 5px; margin: 10px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>🎮 Игра в Мины</h1>
+    <div class="balance">Баланс: <span id="balance">0</span> ₽</div>
+    <button onclick="placeBet(100)">Поставить 100₽</button>
+    <button onclick="checkWin()">Проверить выигрыш</button>
+    
+    <script src="app.js"></script>
+</body>
+</html>
